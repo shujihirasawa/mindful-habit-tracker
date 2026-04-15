@@ -35,6 +35,7 @@
     .app{max-width:430px;margin:0 auto;min-height:100dvh;padding:env(safe-area-inset-top) var(--space-4) calc(env(safe-area-inset-bottom) + 96px)}
     .topbar{position:sticky;top:0;background:color-mix(in srgb, var(--color-bg) 92%, transparent);backdrop-filter:blur(10px);padding:var(--space-4) 0 var(--space-3);display:flex;justify-content:space-between;align-items:flex-start;z-index:20}
     .brand{display:flex;gap:var(--space-3);align-items:center}
+    .brand.no-logo{gap:0}
     .logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface-2));display:grid;place-items:center;box-shadow:var(--shadow-sm)}
     .logo svg{width:24px;height:24px}
     .title{font-size:var(--text-xl);font-weight:800;letter-spacing:-.02em}
@@ -118,10 +119,7 @@
 <body>
   <div class="app">
     <header class="topbar">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="ロゴ"><path d="M12 3v18"/><path d="M7 8c0-2.5 2.2-4 5-4s5 1.5 5 4-2.2 4-5 4-5 1.5-5 4 2.2 4 5 4 5-1.5 5-4"/></svg>
-        </div>
+      <div class="brand no-logo">
         <div>
           <h1 class="title">習慣トラッカー</h1>
           <div class="subtitle" id="today-label"></div>
@@ -219,6 +217,29 @@
           <button class="emoji-btn" data-emoji="😴">😴</button>
           <button class="emoji-btn" data-emoji="🍎">🍎</button>
           <button class="emoji-btn" data-emoji="📿">📿</button>
+          <button class="emoji-btn" data-emoji="🚶">🚶</button>
+          <button class="emoji-btn" data-emoji="🏋️">🏋️</button>
+          <button class="emoji-btn" data-emoji="🧠">🧠</button>
+          <button class="emoji-btn" data-emoji="📚">📚</button>
+          <button class="emoji-btn" data-emoji="💻">💻</button>
+          <button class="emoji-btn" data-emoji="✍️">✍️</button>
+          <button class="emoji-btn" data-emoji="🎹">🎹</button>
+          <button class="emoji-btn" data-emoji="🎸">🎸</button>
+          <button class="emoji-btn" data-emoji="🗣️">🗣️</button>
+          <button class="emoji-btn" data-emoji="🧹">🧹</button>
+          <button class="emoji-btn" data-emoji="🛏️">🛏️</button>
+          <button class="emoji-btn" data-emoji="😴">😴</button>
+          <button class="emoji-btn" data-emoji="📰">📰</button>
+          <button class="emoji-btn" data-emoji="📔">📔</button>
+          <button class="emoji-btn" data-emoji="🦷">🦷</button>
+          <button class="emoji-btn" data-emoji="🚭">🚭</button>
+          <button class="emoji-btn" data-emoji="☕">☕</button>
+          <button class="emoji-btn" data-emoji="🥗">🥗</button>
+          <button class="emoji-btn" data-emoji="📈">📈</button>
+          <button class="emoji-btn" data-emoji="💰">💰</button>
+          <button class="emoji-btn" data-emoji="🙏">🙏</button>
+          <button class="emoji-btn" data-emoji="🌙">🌙</button>
+          <button class="emoji-btn" data-emoji="🧴">🧴</button>
         </div>
       </div>
       <div class="field">
